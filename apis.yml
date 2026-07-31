@@ -1,8 +1,25 @@
 aid: nplan
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nplan.png
 name: nPlan
-description: 'nPlan is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'nPlan applies machine learning to construction project schedules to forecast
+  and de-risk large capital projects. Trained on a large corpus of historical project
+  schedules, its products (nPlan Insights Pro and nPlan Portfolio) analyze programme
+  risk, benchmark schedules against similar projects, and surface the interventions
+  most likely to keep delivery on time and on budget, with a Power BI integration for
+  portfolio-level project controls. nPlan is a private enterprise SaaS company backed
+  by GV (Google Ventures). As of this enrichment pass it exposes no public developer
+  API, portal, or OpenAPI surface.'
 url: https://raw.githubusercontent.com/api-evangelist/nplan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Enterprise
+- Construction
+- Artificial Intelligence
+- Machine Learning
+- Risk Management
+- Project Controls
+- Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +47,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://nplan.io
+  url: https://www.nplan.io
+- type: Blog
+  url: https://www.nplan.io/blog-posts
+- type: TermsOfService
+  url: https://www.nplan.io/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.nplan.io/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/nplan/
+- type: DomainSecurity
+  url: security/nplan-domain-security.yml
+- type: LLMsTxt
+  url: llms/nplan-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
